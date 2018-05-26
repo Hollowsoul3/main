@@ -13,6 +13,9 @@ public class lesson4 {
         System.out.println(f4(3,4,90));
         System.out.println(f4(12,5,90));
         System.out.println(f4(15,16,180));
+        System.out.println(ploshad2(4,5));
+        f12(2);
+
 
     }
     public static int symma2(int a,int b){
@@ -39,5 +42,26 @@ public class lesson4 {
         double y=Math.sqrt(a*a+b*b-2*a*b*Math.cos(Math.toRadians(c)));
         return y;
     }
+    public static int ploshad2(int a,int b){
+      if (a%2==0){
+          return a*b/2;
+      } else {
+          return a*b;
+      }
+    }
+    public static void f12(int a){
+       if (0<=a && a<10){
+           System.out.println("a=[0,10)");
+       }
+       if (10<=a && a<100){
+           System.out.println("a=[10,100)");
+       }
+       if (100<=a && a<1000){
+           System.out.println("a=[100,1000)");
+       }
+    }
+
+
+
 
 }
